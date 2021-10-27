@@ -1,5 +1,5 @@
 import argparse
-import pandas as pd
+import h5py
 import os
 from data_utils import *
 
@@ -21,6 +21,7 @@ if __name__=="__main__":
             Each sample is labelled with a name starting with f (indicating spoof image) and r (indicating real image)'''
         path=args.get("input")
         data=[]
+        labels=[]
         for file in os.listdir(path):
             img=cv2.imread(os.path.join(path,file))
             face=extract_face(img)
@@ -28,12 +29,17 @@ if __name__=="__main__":
             
             for i in range(len(patches)):
                 if file[0]=='f':
-                    data.append((patches[i],0))
+                    data.append(patches[i])
+                    labels.append([0])
                 else:
-                    data.append((patches[i],1))
+                    data.append(patches[i])
+                    labels.append([1])
             
-            df=pd.DataFrame(data)
-            df.to_csv("data.csv",index=None,header=None)
+            hf = h5py.File('data.h5', 'w')
+            train_features=hf.create_dataset('Dataset_Data', data=data)
+            train_labels=hf.create_dataset('Dataset_Labels', data=labels)
+            hf.close()
+            
         
         
 
