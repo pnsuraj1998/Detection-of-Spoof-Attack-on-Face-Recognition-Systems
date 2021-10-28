@@ -26,9 +26,6 @@ def extract_patches(img):
         patch.extend(cv2.resize(img_patch,(96,96)))
     return patch
 
-
-
-
 def extract_face(img):
     img=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
     img=Image.fromarray(img)
