@@ -37,6 +37,7 @@ def train(model,train_loader,epochs):
 def test(model,test_loader):
     correct=0
     total=0
+    model.eval()
     with torch.no_grad():
         for i,data in enumerate(test_loader):
             inputs,labels=data
