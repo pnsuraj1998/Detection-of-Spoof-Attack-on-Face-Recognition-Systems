@@ -34,12 +34,3 @@ if __name__=="__main__":
             train_features=hf.create_dataset('Dataset_Data', data=data)
             train_labels=hf.create_dataset('Dataset_Labels', data=labels)
             hf.close()
-            
-        
-        
-
-        
-
-
-
-
