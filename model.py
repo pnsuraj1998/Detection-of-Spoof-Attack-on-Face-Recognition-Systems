@@ -2,8 +2,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch
 
-
-
 class patch_cnn_model(nn.Module):
     def __init__(self) -> None:
         super(patch_cnn_model,self).__init__()
