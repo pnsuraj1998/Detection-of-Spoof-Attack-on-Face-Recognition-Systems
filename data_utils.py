@@ -2,7 +2,6 @@ from facenet_pytorch import MTCNN
 import cv2
 from PIL import Image
 
-
 def extract_keypoints(img):
     img=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
     sift=cv2.xfeatures2d.SIFT_create()
