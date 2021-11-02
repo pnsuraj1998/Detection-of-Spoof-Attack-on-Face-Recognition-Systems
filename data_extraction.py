@@ -3,11 +3,6 @@ import h5py
 import os
 from data_utils import *
 
-
-
-
-
-
 if __name__=="__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--input", type=str, default="",
