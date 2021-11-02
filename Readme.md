@@ -6,7 +6,7 @@ With the rise of Face recognition systems,there has also been a steady increase 
 
 In order to train our CNN model, we use MSU-USSA dataset which consits of 9,000 images (1,000 live subject and 8,000 spoof attack) of the 1,000 subjects. For any queries regarding dataset, please visit this [link](http://biometrics.cse.msu.edu/Publications/Databases/MSU_LFW+_back/). 
 
-<<<<<<< HEAD
+
 
 1. Run the following code to create a h5 file containing data and their associated labels (0 - Spoof, 1 - Real) :  
     ``` python data_extraction.py -i "path_to_dataset" ```
@@ -14,4 +14,4 @@ In order to train our CNN model, we use MSU-USSA dataset which consits of 9,000 
 =======
 1. Run the following code to create a h5 file containing data and their associated labels (0 - Spoof, 1 - Real) :  
     ``` python data_extraction.py -i "path_to_dataset" ```
->>>>>>> 395a522ffda1ca1088ad4b6ad6ecada780bad586
+

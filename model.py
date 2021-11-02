@@ -45,7 +45,7 @@ class patch_cnn_model(nn.Module):
 
         X=F.relu(self.conv_5(X))
         X=self.pool_5(self.norm_5(X))
-        print(np.shape(X))
+
 
         X=torch.flatten(X,1)
         
