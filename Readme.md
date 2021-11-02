@@ -8,10 +8,7 @@ In order to train our CNN model, we use MSU-USSA dataset which consits of 9,000 
 
 
 
-1. Run the following code to create a h5 file containing data and their associated labels (0 - Spoof, 1 - Real) :  
-    ``` python data_extraction.py -i "path_to_dataset" ```
-2. 
-=======
+
 1. Run the following code to create a h5 file containing data and their associated labels (0 - Spoof, 1 - Real) :  
     ``` python data_extraction.py -i "path_to_dataset" ```
 
