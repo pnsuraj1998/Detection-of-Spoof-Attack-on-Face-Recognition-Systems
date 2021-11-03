@@ -14,8 +14,8 @@ Given an image or a video frame, we use MTCNN to detect face and extract 96X96 p
 2. To display model architecture, run following code:  
    ``` python model.py ```
 3. To train CNN model, run following code:   
-  ``` python -i "path_to_h5_file" -e no_of_epochs -b batch_size ```
-  After training and testing, the model will be saved defaultly in the same project folder for every 10 epochs.
+  ``` python -i "path_to_h5_file" -e no_of_epochs -b batch_size ```.   
+    After training and testing, the model will be saved defaultly in the same project folder for every 10 epochs.
 4. In order to run inference on a video, run following code :  
   ``` python inference.py -i "path_to_trained_cnn_model" ```
 
