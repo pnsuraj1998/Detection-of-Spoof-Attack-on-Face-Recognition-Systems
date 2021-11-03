@@ -1,6 +1,6 @@
 # Spoof Attack detection on Face Recognition Systems #
 
-With the rise of Face recognition systems,there has also been a steady increase in number of spoof attacks on the face recongiton system. In this porject, we build a Convolution Neural Network (CNN) model capable of detecting spoof attacks on the system.
+With the rise of Face recognition systems,there has also been a steady increase in number of spoof attacks on the face recongiton system. In this porject, we build a Convolutional Neural Network (CNN) model capable of detecting spoof attacks on the system.
 
 ## Training and Inference ##
 
